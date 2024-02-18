@@ -19,7 +19,7 @@ function App() {
 
   const handleSubmit = () => {
     if (!username) {
-      alert('Please fill out all fields');
+      setErrorMessage('Please fill out all fields');
       return;
     }
     if (!email.includes('@')) {
